@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+    type: front-end
+spec:
+  containers:
+    - name: nginx-container
+      image: frannyoa/nginx
+      ports:
+        - containerPort: 80
