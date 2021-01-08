@@ -1,7 +1,7 @@
 pipeline {
       agent any
       environment {
-      registry = "frannyoa/"
+      registry = "frannyoa/frankie_docker_1repo"
       registryCredential = 'frannyoa'
       DOCKER_TAG = 'simpleweb'
     }
