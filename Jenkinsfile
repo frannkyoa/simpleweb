@@ -1,14 +1,14 @@
 pipeline {
       agent any
       environment {
-      registry = "frannyoa/frankie_docker_1repo"
+      registry = "frannyoa/"
       registryCredential = 'frannyoa'
-      DOCKER_TAG = 'nginx'
+      DOCKER_TAG = 'simpleweb'
     }
     stages {
       stage('Cloning Git') {
         steps {
-          git 'https://github.com/frannkyoa/img-docker-react.git'
+          git 'https://github.com/frannkyoa/simpleweb.git'
         }
       }
       stage('Build docker Image'){

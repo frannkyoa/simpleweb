@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
+  name: simpleweb
   labels:
-    app: nginx
+    app: simpleweb
     type: front-end
 spec:
   containers:
-    - name: nginx-container
-      image: frannyoa/nginx
+    - name: simpleweb-container
+      image: frannyoa/simpleweb
       ports:
         - containerPort: 80
