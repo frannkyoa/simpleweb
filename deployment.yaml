@@ -15,10 +15,11 @@ spec:
       containers:
         - name: simpleweb-container
           image: frannyoa/frankie_docker_1repo:simpleweb
-      imagePullSecrets:
-        - name: dockerhubcred
           ports:
             - containerPort: 5000
+      imagePullSecrets:
+        - name: dockerhubcred
+
 ---
 apiVersion: v1
 kind: Service
