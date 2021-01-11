@@ -16,7 +16,7 @@ spec:
         - name: simpleweb-container
           image: frannyoa/frankie_docker_1repo:simpleweb
           ports:
-            - containerPort: 5000
+            - containerPort: 3000
       imagePullSecrets:
         - name: dockerhubcred
 
@@ -30,7 +30,8 @@ metadata:
 spec:
   ports:
     - port: 5000
-      targetPort: 80
+      targetPort: 3000
+      nodePort: 31500
   selector:
     app: simpleweb
     tier: simpleweb
